@@ -13,5 +13,6 @@
     }
   },
 
-  "postCreateCommand": "pip install -e . && pip install pytest ruff black"
+  "postCreateCommand": "pip install -e . && pip install pytest ruff==0.14.10 black"
+
 }
