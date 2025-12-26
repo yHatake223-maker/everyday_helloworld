@@ -1,6 +1,7 @@
 import subprocess
 import sys
 
+
 def test_module_run():
     result = subprocess.run(
         [sys.executable, "-m", "everyday_helloworld"],
