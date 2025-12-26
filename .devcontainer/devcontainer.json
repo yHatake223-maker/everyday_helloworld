@@ -3,6 +3,7 @@
   "dockerComposeFile": ["../compose.yml"],
   "service": "app",
   "workspaceFolder": "/workspace",
+
   "customizations": {
     "vscode": {
       "extensions": [
@@ -11,5 +12,6 @@
       ]
     }
   },
-  "postCreateCommand": "pip install pytest ruff black"
+
+  "postCreateCommand": "pip install -e . && pip install pytest ruff black"
 }

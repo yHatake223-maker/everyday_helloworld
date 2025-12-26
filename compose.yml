@@ -3,5 +3,6 @@ services:
     build: .
     volumes:
       - .:/workspace:cached
+      - ~/.ssh:/root/.ssh:ro
     working_dir: /workspace
     command: sleep infinity
