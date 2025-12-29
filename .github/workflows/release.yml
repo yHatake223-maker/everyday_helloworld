@@ -39,6 +39,14 @@ jobs:
       - name: Build package
         run: python -m build
 
+      - name: Delete existing GitHub Release (if any)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TAG="${{ github.ref_name }}"
+          gh release view "$TAG" >/dev/null 2>&1 && gh release delete "$TAG" -y || echo "No release to delete"
+
+
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
