@@ -51,3 +51,7 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           files: dist/*
+          fail_on_unmatched_files: true
+          # 同じ tag の Release が既にある場合、Assets を上書きする
+          # （古い dist 物が残り続けるのを防ぐ）
+          overwrite: true
