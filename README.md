@@ -97,3 +97,5 @@ git branch -d feature/daily-ci-YYYYMMDD
 
 ✅ Warm-up complete.
 Repeat this flow every day to keep CI/CD muscle memory fresh.
+
+Daily warm-up log: 2025-12-29 (b)
