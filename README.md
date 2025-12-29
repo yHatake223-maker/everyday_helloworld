@@ -101,3 +101,31 @@ Repeat this flow every day to keep CI/CD muscle memory fresh.
 Daily warm-up log: 2025-12-29 (b)
 Daily warm-up executed on 2025-12-29.
 
+## Daily warm-up (5 min)
+
+Goal: PR → merge → Release (CD) confirmation.
+
+1. Create a branch
+   - `git switch main && git pull`
+   - `git switch -c feature/daily-warmup-YYYYMMDD`
+
+2. Make a tiny change (docs)
+   - Add one line to README (e.g. `CI daily warm-up: YYYY-MM-DD`)
+
+3. Run locally (optional)
+   - `pytest -q` (or skip if time is tight)
+
+4. Commit & push
+   - `git add README.md`
+   - `git commit -m "docs: daily warm-up (YYYY-MM-DD)"`
+   - `git push -u origin HEAD`
+
+5. Open PR (GitHub UI)
+   - base: `main` / compare: your branch
+   - Create PR and confirm CI is green
+
+6. Merge PR (GitHub UI)
+   - Click “Merge pull request”
+
+7. CD check (Release)
+   - Confirm a new tag/release exists and assets are attached
