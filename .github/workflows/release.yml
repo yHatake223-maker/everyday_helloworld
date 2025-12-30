@@ -1,4 +1,4 @@
-name: Release
+nname: Release
 
 on:
   push:
@@ -15,11 +15,14 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+          cache: "pip"
 
       - name: Install dependencies
         run: |
@@ -48,7 +51,6 @@ jobs:
         run: |
           TAG="${{ github.ref_name }}"
           gh release view "$TAG" >/dev/null 2>&1 && gh release delete "$TAG" -y || echo "No release to delete"
-
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
