@@ -130,3 +130,7 @@ Goal: PR → merge → Release (CD) confirmation.
 
 7. CD check (Release)
    - Confirm a new tag/release exists and assets are attached
+
+
+
+CI daily warm-up: 2025-12-30
