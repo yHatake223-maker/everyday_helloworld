@@ -73,6 +73,8 @@ git push -u origin HEAD
 **タグを打つ前に必ず確認する**
 
 * `main` に入っている version と、打とうとしている tag が一致していること
+* Pre-tag check: `git show main:pyproject.toml | grep '^version'` が打とうとしている tag（例: `v0.1.6`）と一致していることを確認
+
 
 ```bash
 git show main:pyproject.toml | grep '^version'
