@@ -71,6 +71,15 @@ git push -u origin HEAD
 #### 6. Pre-tag check（重要）
 
 **タグを打つ前に必ず確認する**
+### ✅ Pre-tag checklist (must)
+
+- [ ] 現在のブランチが `main` である
+- [ ] `git pull` 済みである
+- [ ] `pyproject.toml` の version を確認した
+- [ ] 打とうとしている tag が `vX.Y.Z` 形式である
+- [ ] version と tag の数値が一致している
+- [ ] この tag は **初出**（既存 tag ではない）
+- [ ] 同じ tag がすでに存在しないことを確認した（git tag --list 'vX.Y.Z'）
 
 * `main` に入っている version と、打とうとしている tag が一致していること
 * Pre-tag check: `git show main:pyproject.toml | grep '^version'` が打とうとしている tag（例: `v0.1.6`）と一致していることを確認
