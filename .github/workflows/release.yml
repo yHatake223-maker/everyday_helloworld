@@ -36,6 +36,9 @@ jobs:
       - name: Test (pytest)
         run: pytest
 
+      - name: Clean dist
+        run: rm -rf dist build *.egg-info
+
       - name: Build package
         run: python -m build
 
