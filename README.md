@@ -1,12 +1,10 @@
-
-````md
 # everyday_helloworld
 
 ## Overview
 This repository is used for daily CI/CD warm-up practice.  
 The goal is to continuously exercise the full flow:
 
-**PR → merge → Release (CD)**
+**PR → merge → Tag → Release (CD)**
 
 Small, safe, repeatable actions every day to build CI/CD muscle memory.
 
@@ -15,7 +13,11 @@ Small, safe, repeatable actions every day to build CI/CD muscle memory.
 ## Daily Warm-up Flow（毎日やる手順）
 
 ### Goal
-PR → merge → Release (CD) を安全に確認する
+PR → merge → **GitHub Actions による Tag & Release** を安全に確認する
+
+> ⚠️ Important  
+> **Do NOT create tags locally**  
+> Tag creation is handled only by GitHub Actions
 
 ---
 
@@ -26,106 +28,103 @@ PR → merge → Release (CD) を安全に確認する
 git switch main
 git pull
 git switch -c feature/daily-warmup-YYYYMMDD
-````
+2. Make a tiny change (docs)
+Add exactly one line to README
 
----
+Any content is OK (example: date log)
 
-#### 2. Make a tiny change (docs)
+Example:
 
-* README に 1 行だけ追加
-* 内容は何でも OK（例：日付ログ）
-
-例:
-
-```md
+md
+コードをコピーする
 CI daily warm-up: YYYY-MM-DD
-```
-
----
-
-#### 3. Commit & push
-
-```bash
+3. Commit & push
+bash
+コードをコピーする
 git add README.md
 git commit -m "docs: daily warm-up (YYYY-MM-DD)"
 git push -u origin HEAD
-```
+4. Open PR (GitHub UI)
+base: main
 
----
+compare: your branch
 
-#### 4. Open PR (GitHub UI)
+Confirm CI is green
 
-* base: `main`
-* compare: your branch
-* CI が **green** になることを確認
+5. Merge PR (GitHub UI)
+Click Merge pull request
 
----
+Deleting the branch is OK
 
-#### 5. Merge PR (GitHub UI)
+6. Version bump（required）
+Before cutting a tag, always bump the version.
 
-* 「Merge pull request」をクリック
-* branch は削除して OK
+bash
+コードをコピーする
+git switch main
+git pull
+git switch -c feature/bump-version-X.Y.Z
+Edit pyproject.toml:
 
----
+toml
+コードをコピーする
+version = "X.Y.Z"
+bash
+コードをコピーする
+git add pyproject.toml
+git commit -m "chore: bump version to X.Y.Z"
+git push -u origin HEAD
+Open PR → wait for CI → merge
 
-#### 6. Pre-tag check（重要）
+7. Cut tag (GitHub Actions)
+This is the only place where tags are created
 
-**タグを打つ前に必ず確認する**
-### ✅ Pre-tag checklist (must)
+GitHub UI steps:
 
-- [ ] 現在のブランチが `main` である
-- [ ] `git pull` 済みである
-- [ ] `pyproject.toml` の version を確認した
-- [ ] 打とうとしている tag が `vX.Y.Z` 形式である
-- [ ] version と tag の数値が一致している
-- [ ] この tag は **初出**（既存 tag ではない）
-- [ ] 同じ tag がすでに存在しないことを確認した（git tag --list 'vX.Y.Z'）
+Go to Actions
 
-* `main` に入っている version と、打とうとしている tag が一致していること
-* Pre-tag check: `git show main:pyproject.toml | grep '^version'` が打とうとしている tag（例: `v0.1.6`）と一致していることを確認
+Select Cut tag on main
 
+Click Run workflow
 
-```bash
-git show main:pyproject.toml | grep '^version'
-```
+Input version X.Y.Z (or vX.Y.Z)
 
----
+Run
 
-#### 7. Tag & Release
+The workflow guarantees:
 
-* tag を push すると GitHub Actions が自動で Release を作成する
+Tag does not already exist
 
-```bash
-git tag vX.Y.Z
-git push origin vX.Y.Z
-```
+Tag matches pyproject.toml version
 
----
+Tag is created on main HEAD only
 
-#### 8. CD check (Release)
+8. Release (GitHub Actions)
+Tag push automatically triggers Release workflow
 
-GitHub Releases 画面で以下を確認:
+No manual operation required
 
-* 新しい tag / release が存在する
-* Assets に **最新 version の dist だけ**が attach されている
-* Release workflow が **green** で完了している
+9. CD check (Release)
+Verify on GitHub:
 
----
+New tag vX.Y.Z exists
 
-## Release Check（トラブル防止）
+Exactly one Release exists for the tag
 
-* 古い version の dist が Assets に残っていない
-* tag と pyproject.toml の version が一致している
-* 同じ tag の Release が複数存在しない
+Assets are attached correctly
 
----
+Release workflow is green
 
-## Daily Log（履歴・任意）
+Rules
+Local git tag is forbidden
 
-* CI daily warm-up: 2025-12-29
-* CI daily warm-up: 2025-12-30
+Tags are created only by GitHub Actions
 
-```
+Version and tag mismatch must fail
+
+Duplicate tags must never be created
+
+Daily Log
+CI daily warm-up: 2025-12-29
 CI daily warm-up: 2025-12-30
 CI daily warm-up: 2025-12-31
-
