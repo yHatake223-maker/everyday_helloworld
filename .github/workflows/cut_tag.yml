@@ -48,7 +48,7 @@ jobs:
       - name: Ensure pyproject.toml version matches
         shell: bash
         run: |
-          FILE_VER="$(grep '^version' pyproject.toml | head -n1 | sed -E 's/version\s*=\s*"([^"]+)".*/\1/')"
+          FILE_VER="$(grep -E '^[[:space:]]*version[[:space:]]*=' pyproject.toml | head -n1 | sed -E 's/^[[:space:]]*version[[:space:]]*=[[:space:]]*"([^"]+)".*/\1/')"
           echo "pyproject.toml version=$FILE_VER"
           echo "requested version=${{ steps.v.outputs.plain }}"
           if [[ "$FILE_VER" != "${{ steps.v.outputs.plain }}" ]]; then
