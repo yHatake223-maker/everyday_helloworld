@@ -127,3 +127,5 @@ GitHub Releases 画面で以下を確認:
 
 ```
 CI daily warm-up: 2025-12-30
+CI daily warm-up: 2025-12-31
+
