@@ -128,3 +128,6 @@ Daily Log
 CI daily warm-up: 2025-12-29
 CI daily warm-up: 2025-12-30
 CI daily warm-up: 2025-12-31
+CI daily warm-up: 2025-12-31 (final)
+
+CI daily warm-up: 2025-12-31 (year end)
