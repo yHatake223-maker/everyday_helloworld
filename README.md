@@ -128,4 +128,13 @@ CI daily warm-up: 2025-12-31 (final)
 CI daily warm-up: 2025-12-31 (year end)
 CI daily warm-up: 2026-01-01
 CI daily warm-up: 2026-01-02
+## Troubleshooting memo (2026-01-02)
+
+- If multiple rulesets target `main`, the strictest rules apply.
+  - Keep only one ruleset Active for `main`.
+- If a required check stays "Expected — Waiting for status to be reported":
+  - Re-select the required check in the ruleset (remove → Add checks → select again).
+  - Keep "Do not require status checks on creation" OFF.
+  - Close and recreate the PR after changing rulesets.
+
 
