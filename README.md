@@ -127,3 +127,5 @@ CI daily warm-up: 2025-12-31
 CI daily warm-up: 2025-12-31 (final)
 CI daily warm-up: 2025-12-31 (year end)
 CI daily warm-up: 2026-01-01
+CI daily warm-up: 2026-01-02
+
