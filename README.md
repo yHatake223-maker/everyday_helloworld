@@ -21,30 +21,28 @@ PR → merge → **GitHub Actions による Tag & Release** を安全に確認�
 
 ---
 
-### Steps
+## Steps
 
-#### 1. Create a branch
-```bash
+### 1. Create a branch
+
 git switch main
 git pull
 git switch -c feature/daily-warmup-YYYYMMDD
-2. Make a tiny change (docs)
-Add exactly one line to README
 
-Any content is OK (example: date log)
+2. Make a tiny change (docs)
+
+Add exactly one line to README.
 
 Example:
-
-md
-コードをコピーする
 CI daily warm-up: YYYY-MM-DD
+
 3. Commit & push
-bash
-コードをコピーする
 git add README.md
 git commit -m "docs: daily warm-up (YYYY-MM-DD)"
 git push -u origin HEAD
+
 4. Open PR (GitHub UI)
+
 base: main
 
 compare: your branch
@@ -52,33 +50,28 @@ compare: your branch
 Confirm CI is green
 
 5. Merge PR (GitHub UI)
+
 Click Merge pull request
 
 Deleting the branch is OK
 
 6. Version bump（required）
-Before cutting a tag, always bump the version.
 
-bash
-コードをコピーする
+Before cutting a tag, always bump the version.
 git switch main
 git pull
 git switch -c feature/bump-version-X.Y.Z
 Edit pyproject.toml:
-
-toml
-コードをコピーする
 version = "X.Y.Z"
-bash
-コードをコピーする
 git add pyproject.toml
 git commit -m "chore: bump version to X.Y.Z"
 git push -u origin HEAD
+
 Open PR → wait for CI → merge
 
 7. Cut tag (GitHub Actions)
-This is the only place where tags are created
 
+This is the only place where tags are created.
 GitHub UI steps:
 
 Go to Actions
@@ -100,34 +93,37 @@ Tag matches pyproject.toml version
 Tag is created on main HEAD only
 
 8. Release (GitHub Actions)
-Tag push automatically triggers Release workflow
 
-No manual operation required
+Tag creation automatically triggers Release workflow.
+No manual operation required.
 
 9. CD check (Release)
+
 Verify on GitHub:
 
 New tag vX.Y.Z exists
 
-Exactly one Release exists for the tag
+Exactly one Release exists
 
 Assets are attached correctly
 
 Release workflow is green
 
-Rules
-Local git tag is forbidden
+Rules（重要）
 
-Tags are created only by GitHub Actions
+❌ Local git tag is forbidden
 
-Version and tag mismatch must fail
+✅ Tags are created only by GitHub Actions
 
-Duplicate tags must never be created
+❌ Version and tag mismatch must fail
+
+❌ Duplicate tags must never be created
 
 Daily Log
+
 CI daily warm-up: 2025-12-29
 CI daily warm-up: 2025-12-30
 CI daily warm-up: 2025-12-31
 CI daily warm-up: 2025-12-31 (final)
-
 CI daily warm-up: 2025-12-31 (year end)
+CI daily warm-up: 2026-01-01
