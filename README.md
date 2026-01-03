@@ -139,7 +139,58 @@ CI daily warm-up: 2026-01-02
   CI daily warm-up: 2026-01-03
   CI daily warm-up: 2026-01-03_2
   CI daily warm-up: 2026-01-03_3
-  Ruleset変更後は、既存PRがルールを引きずることがある → PR作り直しで解消
-  幽霊Expectedが出たら：一度 Require status checks をOFF→保存→ON→required再登録
-  CIは pull_request のみにして check の混線を防ぐ（今回の安定化
+ ## CI / Ruleset 運用メモ（トラブルシューティング）
+
+### 背景
+
+GitHub の Ruleset は仕様というより実装都合により、  
+**過去に Active だった Ruleset の Required status check が残留する**
+ことがあります。
+
+その結果、存在しない CI が次のように表示され、PR が merge できなくなる場合があります。
+
+- `Expected — Waiting for status to be reported`
+
+---
+
+### 正しい理解（覚えておくべきこと）
+
+- **Active でない Ruleset は評価されない**
+- ただし、**過去に Active だった Ruleset が同じ branch を target していると、  
+  Required check のゴミが残ることがある**
+
+---
+
+### 運用ルール（超重要）
+
+- **同じ branch を target する Ruleset は必ず 1 つだけ**
+- **使わなくなった Ruleset は Inactive にせず削除する**
+- Required check 名を変更する場合は、必ず次の手順を踏む
+
+---
+
+### Required check 名を変更する正しい手順
+
+1. Ruleset の  
+   **「Require status checks to pass」** を一度 OFF にする
+2. workflow / job 名を変更する
+3. Ruleset を再設定する（Required check を再追加）
+4. 必要であれば PR を作り直す
+
+---
+
+### よくある対処法（詰まったらここを見る）
+
+- Required check が `Expected — Waiting for status to be reported` のままの場合
+  - Ruleset で Required check を一度削除して再追加する
+  - 「Do not require status checks on creation」は OFF のままにする
+  - 直らない場合は PR を close → 新規作成する
+
+---
+
+### CI daily warm-up
+
+- 2026-01-02
+- 2026-01-03
+
 
