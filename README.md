@@ -136,5 +136,6 @@ CI daily warm-up: 2026-01-02
   - Re-select the required check in the ruleset (remove → Add checks → select again).
   - Keep "Do not require status checks on creation" OFF.
   - Close and recreate the PR after changing rulesets.
+  CI daily warm-up: 2026-01-03
 
 
