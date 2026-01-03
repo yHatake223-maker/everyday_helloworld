@@ -138,5 +138,8 @@ CI daily warm-up: 2026-01-02
   - Close and recreate the PR after changing rulesets.
   CI daily warm-up: 2026-01-03
   CI daily warm-up: 2026-01-03_2
-
+  CI daily warm-up: 2026-01-03_3
+  Ruleset変更後は、既存PRがルールを引きずることがある → PR作り直しで解消
+  幽霊Expectedが出たら：一度 Require status checks をOFF→保存→ON→required再登録
+  CIは pull_request のみにして check の混線を防ぐ（今回の安定化
 
