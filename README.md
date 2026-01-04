@@ -194,4 +194,23 @@ GitHub の Ruleset は仕様というより実装都合により、
 - 2026-01-03
 - 2026-01-04
 
+## CI daily warm-up: Day1 (YYYY-MM-DD)
+
+### Goal
+- Confirm that the required CI check runs exactly once on pull_request.
+
+### What I did
+- Created a feature branch.
+- Updated README only.
+- Opened a pull request to main.
+
+### What I observed
+- `pr-ci-test` ran once.
+- No ghost / expected checks appeared.
+- Required check matched the workflow job name.
+
+### Result
+- CI behavior is stable and predictable.
+
+
 
