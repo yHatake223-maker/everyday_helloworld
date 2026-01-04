@@ -130,27 +130,6 @@ Rules（重要）
 
 ❌ Duplicate tags must never be created
 
-Daily Log
-
-CI daily warm-up: 2025-12-29
-
-CI daily warm-up: 2025-12-30
-
-CI daily warm-up: 2025-12-31
-
-CI daily warm-up: 2025-12-31 (final)
-
-CI daily warm-up: 2025-12-31 (year end)
-
-CI daily warm-up: 2026-01-01
-
-CI daily warm-up: 2026-01-02
-
-CI daily warm-up: 2026-01-03
-
-CI daily warm-up: 2026-01-03_2
-
-CI daily warm-up: 2026-01-03_3
 
 Troubleshooting memo (2026-01-02)
 
@@ -239,3 +218,25 @@ Required check matched the workflow job name.
 Result
 
 CI behavior is stable and predictable.
+
+Daily Log
+
+CI daily warm-up: 2025-12-29
+
+CI daily warm-up: 2025-12-30
+
+CI daily warm-up: 2025-12-31
+
+CI daily warm-up: 2025-12-31 (final)
+
+CI daily warm-up: 2025-12-31 (year end)
+
+CI daily warm-up: 2026-01-01
+
+CI daily warm-up: 2026-01-02
+
+CI daily warm-up: 2026-01-03
+
+CI daily warm-up: 2026-01-03_2
+
+CI daily warm-up: 2026-01-03_3
