@@ -130,6 +130,22 @@ Rules（重要）
 
 ❌ Duplicate tags must never be created
 
+## CI Failure Log Template
+
+When CI fails, record the following:
+
+- Date:
+- PR URL:
+- Failed workflow / job:
+- Error message (first meaningful line):
+- Where I looked first:
+- What fixed it (or not fixed yet):
+- Lesson (1 line):
+
+Rule:
+- Do not retry blindly
+- Always identify the first failing job
+
 
 Troubleshooting memo (2026-01-02)
 
