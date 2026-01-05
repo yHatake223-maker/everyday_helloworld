@@ -130,6 +130,10 @@ Rules（重要）
 
 ❌ Duplicate tags must never be created
 
+
+ ## CI / Ruleset 運用メモ（トラブルシューティング）
+=======
+=======
 ## CI Failure Log Template
 
 When CI fails, record the following:
@@ -150,6 +154,7 @@ Rule:
 Troubleshooting memo (2026-01-02)
 
 If multiple rulesets target main, the strictest rules apply.
+
 
 Keep only one ruleset Active for main.
 
@@ -201,10 +206,15 @@ Ruleset を再設定（Required check を再追加）
 
 よくある対処法（詰まったらここを見る）
 
-Required check が
-Expected — Waiting for status to be reported のままの場合:
+If a required check stays "Expected — Waiting for status to be reported":
 
-Ruleset で Required check を一度削除して再追加
+- Re-select the required check in the ruleset (remove → Add checks → select again).
+- Keep "Do not require status checks on creation" OFF.
+- Close and recreate the PR after changing rulesets.
+
+（ここに日本語補足を残すなら）
+補足（日本語）
+- Ruleset で Required check を一度削除して再追加
 
 Do not require status checks on creation は OFF のまま
 
@@ -235,24 +245,26 @@ Result
 
 CI behavior is stable and predictable.
 
+## Troubleshooting memo (2026-01-02)
+
+- If multiple rulesets target `main`, the strictest rules apply.
+  - Keep only one ruleset Active for `main`.
+- If a required check stays "Expected — Waiting for status to be reported":
+  - Re-select the required check in the ruleset (remove → Add checks → select again).
+  - Keep "Do not require status checks on creation" OFF.
+  - Close and recreate the PR after changing rulesets.
+
 Daily Log
 
 CI daily warm-up: 2025-12-29
-
 CI daily warm-up: 2025-12-30
-
 CI daily warm-up: 2025-12-31
-
 CI daily warm-up: 2025-12-31 (final)
-
 CI daily warm-up: 2025-12-31 (year end)
-
 CI daily warm-up: 2026-01-01
-
 CI daily warm-up: 2026-01-02
-
 CI daily warm-up: 2026-01-03
-
 CI daily warm-up: 2026-01-03_2
-
 CI daily warm-up: 2026-01-03_3
+CI daily warm-up: 2026-01-04
+CI daily warm-up: 2026-01-05
