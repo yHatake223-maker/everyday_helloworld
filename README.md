@@ -119,26 +119,6 @@ Rules（重要）
 
 ❌ Duplicate tags must never be created
 
-Daily Log
-
-CI daily warm-up: 2025-12-29
-CI daily warm-up: 2025-12-30
-CI daily warm-up: 2025-12-31
-CI daily warm-up: 2025-12-31 (final)
-CI daily warm-up: 2025-12-31 (year end)
-CI daily warm-up: 2026-01-01
-CI daily warm-up: 2026-01-02
-## Troubleshooting memo (2026-01-02)
-
-- If multiple rulesets target `main`, the strictest rules apply.
-  - Keep only one ruleset Active for `main`.
-- If a required check stays "Expected — Waiting for status to be reported":
-  - Re-select the required check in the ruleset (remove → Add checks → select again).
-  - Keep "Do not require status checks on creation" OFF.
-  - Close and recreate the PR after changing rulesets.
-  CI daily warm-up: 2026-01-03
-  CI daily warm-up: 2026-01-03_2
-  CI daily warm-up: 2026-01-03_3
  ## CI / Ruleset 運用メモ（トラブルシューティング）
 
 ### 背景
@@ -188,11 +168,6 @@ GitHub の Ruleset は仕様というより実装都合により、
 
 ---
 
-### CI daily warm-up
-
-- 2026-01-02
-- 2026-01-03
-- 2026-01-04
 
 ## CI daily warm-up: Day1 (YYYY-MM-DD)
 
@@ -213,4 +188,25 @@ GitHub の Ruleset は仕様というより実装都合により、
 - CI behavior is stable and predictable.
 
 
+Daily Log
 
+CI daily warm-up: 2025-12-29
+CI daily warm-up: 2025-12-30
+CI daily warm-up: 2025-12-31
+CI daily warm-up: 2025-12-31 (final)
+CI daily warm-up: 2025-12-31 (year end)
+CI daily warm-up: 2026-01-01
+CI daily warm-up: 2026-01-02
+## Troubleshooting memo (2026-01-02)
+
+- If multiple rulesets target `main`, the strictest rules apply.
+  - Keep only one ruleset Active for `main`.
+- If a required check stays "Expected — Waiting for status to be reported":
+  - Re-select the required check in the ruleset (remove → Add checks → select again).
+  - Keep "Do not require status checks on creation" OFF.
+  - Close and recreate the PR after changing rulesets.
+  CI daily warm-up: 2026-01-03
+  CI daily warm-up: 2026-01-03_2
+  CI daily warm-up: 2026-01-03_3
+- 2026-01-04
+  CI daily warm-up: 2026-01-04
