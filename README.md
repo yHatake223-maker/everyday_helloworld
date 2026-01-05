@@ -130,14 +130,31 @@ Rules（重要）
 
 ❌ Duplicate tags must never be created
 
-<<<<<<< HEAD
+
  ## CI / Ruleset 運用メモ（トラブルシューティング）
 =======
+=======
+## CI Failure Log Template
+
+When CI fails, record the following:
+
+- Date:
+- PR URL:
+- Failed workflow / job:
+- Error message (first meaningful line):
+- Where I looked first:
+- What fixed it (or not fixed yet):
+- Lesson (1 line):
+
+Rule:
+- Do not retry blindly
+- Always identify the first failing job
+
 
 Troubleshooting memo (2026-01-02)
 
 If multiple rulesets target main, the strictest rules apply.
->>>>>>> origin/main
+
 
 Keep only one ruleset Active for main.
 
@@ -189,13 +206,15 @@ Ruleset を再設定（Required check を再追加）
 
 よくある対処法（詰まったらここを見る）
 
-<<<<<<< HEAD
-=======
-Required check が
-Expected — Waiting for status to be reported のままの場合:
+If a required check stays "Expected — Waiting for status to be reported":
 
-Ruleset で Required check を一度削除して再追加
->>>>>>> origin/main
+- Re-select the required check in the ruleset (remove → Add checks → select again).
+- Keep "Do not require status checks on creation" OFF.
+- Close and recreate the PR after changing rulesets.
+
+（ここに日本語補足を残すなら）
+補足（日本語）
+- Ruleset で Required check を一度削除して再追加
 
 Do not require status checks on creation は OFF のまま
 
