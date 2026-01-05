@@ -268,3 +268,5 @@ CI daily warm-up: 2026-01-03_2
 CI daily warm-up: 2026-01-03_3
 CI daily warm-up: 2026-01-04
 CI daily warm-up: 2026-01-05
+CI daily warm-up: 2026-01-05 (template check)
+
