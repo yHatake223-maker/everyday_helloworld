@@ -205,3 +205,18 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# --- Secrets / local environment (must not be committed) ---
+
+# dotenv files (actual secrets)
+.env
+.env.*
+
+# allow example files for sharing keys structure
+!.env.example
+
+# devcontainer local env (may contain API keys)
+.devcontainer/.env
+
+# OS specific
+.DS_Store
