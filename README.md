@@ -271,3 +271,4 @@ CI daily warm-up: 2026-01-05
 CI daily warm-up: 2026-01-06
 CI daily warm-up: 2026-01-07
 Lesson: Write runbooks for recurring failures to avoid decision fatigue.
+CI daily warm-up: 2026-01-08
