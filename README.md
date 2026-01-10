@@ -254,6 +254,14 @@ CI behavior is stable and predictable.
   - Keep "Do not require status checks on creation" OFF.
   - Close and recreate the PR after changing rulesets.
 
+
+## Runbooks
+
+- docs/runbook-conflict.md
+- docs/runbook-pr.md
+
+
+
 Daily Log
 
 CI daily warm-up: 2025-12-29
