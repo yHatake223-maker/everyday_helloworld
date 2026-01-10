@@ -13,6 +13,7 @@ concurrency:
 jobs:
   test:
     name: pr-ci-test
+    timeout-minutes: 10
     runs-on: ubuntu-latest
 
     steps:
