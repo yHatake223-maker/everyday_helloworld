@@ -2,6 +2,7 @@
 
 ## Policies
 - Branch protection / ruleset: `policy/branch-protection.md`
+- Tests policy: `policy/tests.md`
 
 ## Dev Container
 
