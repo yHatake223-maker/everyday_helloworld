@@ -69,6 +69,9 @@ Delete the feature branch after merge
 
 If something looks wrong
 
+- If CI is green but merge button is disabled, reload the PR page and wait.
+
+
 Do NOT merge in a hurry
 
 Re-check:
@@ -94,3 +97,4 @@ PR is merged cleanly
 main is updated via PR only
 
 Daily warm-up completes without confusion
+
