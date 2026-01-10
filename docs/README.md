@@ -1,5 +1,26 @@
 ## Runbooks
 
+## Dev Container
+
+このリポジトリは Dev Container（VS Code）で再現可能な開発環境を提供します。
+
+### 前提
+- VS Code
+- Docker
+- 拡張機能: Dev Containers
+
+### 起動手順（最短）
+1. リポジトリを開く
+2. コマンドパレット → **Dev Containers: Reopen in Container**
+3. 初回はビルドが走る（数分）
+4. コンテナ内ターミナルが開いたら準備完了
+
+### 動作確認
+```bash
+python --version
+
+
+
 - CI failure: `runbooks/ci-failure.md`（Required check: `pr-ci-test`）
 
 
