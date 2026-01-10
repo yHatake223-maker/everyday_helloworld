@@ -45,6 +45,27 @@
 ---
 
 ## 2. 移植先 repo ごとに見直すポイント（最小）
+### CI 実行コマンドの確認（実例）
+
+元 repo の `.github/workflows/ci.yml` では、以下を実行している：
+
+- 依存関係のインストール
+  - `python -m pip install --upgrade pip`
+  - `pip install -e .`
+  - `pip install pytest ruff==0.14.10 build`
+
+- Lint
+  - `ruff check .`
+
+- Format check
+  - `ruff format --check .`
+
+- Test
+  - `pytest`
+
+移植先では、**このうち最低限どこまでを維持するか**を判断する。  
+まずは「最小で green になる構成」を優先し、巡航を止めない。
+
 
 ### CI コマンド（最重要）
 - `ci.yml` のテスト実行コマンドは移植先に合わせて調整する  
