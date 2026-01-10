@@ -23,6 +23,67 @@
 ---
 
 ## 2. まず分類する（よくある原因）
+
+## Examples（よくある失敗パターン）
+
+### Example 1: pip install が失敗する（依存/ビルド）
+症状:
+- `pip install ...` で終了コードが非0
+- `No matching distribution found` / `Could not build wheels` など
+
+見る場所:
+- 失敗した step の直前の `pip` ログ
+- Python バージョン表示（ログに出ていなければ追加する）
+
+対処（最小）:
+- 依存のバージョン指定を見直す（特に Python 互換）
+- 必要なら `python --version` / `pip --version` を workflow に一時的に追加して切り分け
+
+---
+
+### Example 2: import error（ModuleNotFoundError）
+症状:
+- `ModuleNotFoundError: ...`
+- `ImportError: ...`
+
+見る場所:
+- 例外の最初の行（どのモジュールが無いか）
+- 実行コマンド（pytest / python -m ...）
+
+対処（最小）:
+- 依存追加漏れなら requirements/pyproject に追加
+- パッケージ構成変更なら import パスを最小で修正
+
+---
+
+### Example 3: workflow の権限不足（permission denied）
+症状:
+- `Resource not accessible by integration`
+- `Permission denied`（GitHub API / push / release など）
+
+見る場所:
+- エラー行の直前に「何をしようとしていたか」
+- 該当 workflow の `permissions:` ブロック
+
+対処（最小）:
+- 必要な権限だけ追加（例: tag push→`contents: write`、workflow dispatch→`actions: write`）
+- 追加したら runbook に「なぜ必要か」を1行追記
+
+---
+
+### Example 4: concurrency で古い run がキャンセルされる（正常動作）
+症状:
+- run が `cancelled` になる
+- 直後に新しい run が開始されている
+
+見る場所:
+- PR の Checks で **最新 run** を開く（古い run を見ない）
+
+対処:
+- 対処不要（正常）
+- 誤解が起きた場合は runbook に「最新runを見る」を強調する
+
+
 ### A. テスト失敗（assert / exit code 1）
 - 変更内容とテストの意図が一致しているか確認
 - 期待値の更新が必要か、実装が不足しているかを判断
