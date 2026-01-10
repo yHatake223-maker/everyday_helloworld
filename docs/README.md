@@ -3,6 +3,7 @@
 ## Policies
 - Branch protection / ruleset: `policy/branch-protection.md`
 - Tests policy: `policy/tests.md`
+- Entrypoints: `runbooks/entrypoints.md`
 
 ## Dev Container
 
