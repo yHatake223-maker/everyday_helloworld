@@ -19,6 +19,7 @@ concurrency:
 
 jobs:
   cut_tag:
+    timeout-minutes: 10
     runs-on: ubuntu-latest
 
     steps:
