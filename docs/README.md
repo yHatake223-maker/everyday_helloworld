@@ -1,5 +1,6 @@
 ## Runbooks
 - Template migration: `runbooks/template-migration.md`
+- Ruleset checklist: `runbooks/ruleset-checklist.md`
 
 ## Policies
 - Branch protection / ruleset: `policy/branch-protection.md`
