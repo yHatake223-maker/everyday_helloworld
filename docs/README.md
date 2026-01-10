@@ -1,5 +1,8 @@
 ## Runbooks
 
+## Policies
+- Branch protection / ruleset: `policy/branch-protection.md`
+
 ## Dev Container
 
 このリポジトリは Dev Container（VS Code）で再現可能な開発環境を提供します。
