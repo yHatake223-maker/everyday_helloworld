@@ -12,6 +12,11 @@ permissions:
   contents: write
   actions: write
 
+concurrency:
+  group: cut-tag
+  cancel-in-progress: false
+
+
 jobs:
   cut_tag:
     runs-on: ubuntu-latest
