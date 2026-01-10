@@ -1,3 +1,8 @@
+## Runbooks
+
+- CI failure: `runbooks/ci-failure.md`（Required check: `pr-ci-test`）
+
+
 # Docs
 
 This directory contains operational documents for this repository.
