@@ -1,6 +1,7 @@
 ## Runbooks
 - Template migration: `runbooks/template-migration.md`
 - Ruleset checklist: `runbooks/ruleset-checklist.md`
+- New repo scenario: `runbooks/new-repo-scenario.md`
 
 ## Policies
 - Branch protection / ruleset: `policy/branch-protection.md`
