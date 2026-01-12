@@ -8,26 +8,23 @@ Follow these steps to complete one full PR → CI → merge cycle.
 git switch main
 git pull
 git switch -c feature/daily-warmup-YYYYMMDD
-2. Make a tiny change
 
+2. Make a tiny change
 Add one line to README.md (append to the end):
 CI daily warm-up: YYYY-MM-DD
+
 3. Commit and push
 git add README.md
 git commit -m "docs: daily warm-up (YYYY-MM-DD)"
 git push -u origin HEAD
+
 4. Open a Pull Request
-
 Base branch: main
-
 Compare branch: your feature branch
-
 Confirm that pr-ci-test runs and becomes green
 
 5. Merge
-
 Click Merge pull request
-
 Delete the feature branch after merge
 
 ✅ Done.
@@ -38,8 +35,6 @@ For troubleshooting and detailed procedures, see:
 docs/runbook-pr.md
 
 docs/runbook-conflict.md
-
-
 
 
 
@@ -331,3 +326,4 @@ CI daily warm-up: 2026-01-09
 CI daily warm-up: 2026-01-10
 CI daily warm-up: 2026-01-11
 CI daily warm-up: 2026-01-12
+CI daily warm-up: 2026-01-13
