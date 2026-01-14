@@ -8,6 +8,20 @@ It is designed to be safe, repeatable, and easy to operate.
 1. Click **Use this template**
 2. Create a new repository
 3. Update the repository name and README title if needed
+
+## Preflight check (after git clone)
+
+Before proceeding, please confirm your local Git setup:
+
+```bash
+git --version
+git config --global --list
+```
+If you see errors related to Git config (for example `.gitconfig`),
+fix them before continuing.
+See:
+- Git config troubleshooting: `docs/runbooks/git-config-troubleshoot.md`
+
 4. Run the first warm-up using the **Quickstart (5 minutes)** section in README
 
 ## Option B: Fork (for learning)
