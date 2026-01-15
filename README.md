@@ -1,3 +1,27 @@
+# CI/CD daily warm-up template
+
+このリポジトリは、**CI/CD を「毎日・自然に回せる状態」にするための GitHub Template** です。  
+実装そのものではなく、**運用の型・導線・判断基準**を提供します。
+
+## Template Usage Principles
+
+このテンプレを実プロジェクト（例: `csv-sum-cli`）で利用する際は、  
+以下の原則を一貫して適用します。
+
+- **実装PR** は、題材となるプロジェクト側のリポジトリに出す  
+  （例: csv-sum-cli の機能追加・テスト追加）
+- **導線・運用・仕組みの改善PR** は、このテンプレ（everyday_helloworld）に還元する
+- 題材側で「便利機能・仕組み」を思いついたら、まず **テンプレとして一般化できるか？** を考える  
+  - Yes → Issue / PR としてこのテンプレに還元する  
+  - No（題材固有）→ 題材リポジトリに残す
+
+このリポジトリは、  
+**「読むと分かる」ではなく「触ると正解へ導かれる」CI/CD テンプレ**を目指して、  
+実運用からのフィードバックによって継続的に改善されます。
+
+
+
+
 ## Quickstart (5 minutes)
 
 This repository is a **daily CI/CD warm-up template**.
