@@ -11,6 +11,18 @@ It is designed to be safe, repeatable, and easy to operate.
 
 ## Preflight check (after git clone)
 
+### Dev Container preflight (recommended)
+
+⚠️ If you reopen the container before opening the correct folder,
+VS Code may attach to a different repository.
+
+1. File → Open Folder
+2. Select the repository root
+3. Confirm the folder name changed
+4. Cmd + Shift + P
+5. Dev Containers: Reopen in Container
+
+
 Before proceeding, please confirm your local Git setup:
 
 ```bash
