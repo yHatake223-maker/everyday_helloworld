@@ -5,6 +5,14 @@
 
 ## Template Usage Principles
 
+## Editor note
+
+- This template is maintained with **VS Code + Dev Containers** in mind to reduce setup friction  and make formatting / tooling behavior predictable.
+
+- However, **VS Code is not required**.  
+You may use any editor or environment as long as the documented steps are followed.
+
+
 このテンプレを実プロジェクト（例: `csv-sum-cli`）で利用する際は、  
 以下の原則を一貫して適用します。
 
