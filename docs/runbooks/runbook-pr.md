@@ -15,7 +15,16 @@ Follow the steps in order. Do not skip checks.
 - PR shows no diff or unexpected status
 
 ---
+## If you are unsure where to look
 
+Start here: [Runbooks Index](./README.md)
+
+Typical paths:
+- PR / merge flow → this document
+- Conflict occurred → [runbook-conflict.md](./runbook-conflict.md)
+- CI failed → [ci-failure.md](./ci-failure.md)
+
+---
 ## Pre-flight checks (before opening PR)
 
 Run these commands **every time** before opening a PR.
