@@ -20,3 +20,35 @@ Find the best runbook for your situation quickly.
 
 - If unsure, start with [runbook-pr.md](./runbook-pr.md).
 - If you hit the same confusion twice, write it down and open an issue.
+
+# Runbooks Index
+
+このディレクトリには、CI/CD daily warm-up および
+テンプレ運用中に発生しがちな「迷い・トラブル」を解消する runbook を集約しています。
+
+「今なにで困っているか？」から、最短で辿れることを目的としています。
+
+---
+
+## Pull Request / Daily Warm-up
+
+- **runbook-pr.md**  
+  PR 作成、CI 確認、merge 手順で迷ったとき  
+  daily warm-up の基本導線はこちら
+
+---
+
+## Git / Conflict / Recovery
+
+- **runbook-conflict.md**  
+  コンフリクト、誤って main に push した場合など  
+  Git 操作のトラブル対応用
+
+---
+
+## CI / Ruleset（運用メモ）
+
+- **runbook-ci.md（予定）**  
+  Required checks / Ruleset の ghost 問題など  
+  CI が「緑なのに merge できない」時の切り分け
+
