@@ -1,6 +1,9 @@
 # Runbooks Index
 
 Find the best runbook for your situation quickly.
+
+> If you are unsure where to start, see **docs/runbooks/README.md** for a situation-based index.
+
 ## Quick index (by situation)
 
 | Situation | Use this | Why |
