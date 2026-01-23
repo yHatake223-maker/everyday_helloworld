@@ -1,4 +1,11 @@
-← Back to [Runbooks Index](./README.md)
+## Start here（迷ったらここ）
+
+- PR を作る / merge する → **このドキュメント**
+- どの runbook を見るべきか分からない → **Runbooks Index**
+
+→ [Runbooks Index](./README.md)
+
+---
 
 # Pull Request Runbook
 
