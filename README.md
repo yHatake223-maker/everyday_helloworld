@@ -338,37 +338,37 @@ CI behavior is stable and predictable.
 
 Daily Log
 
-CI daily warm-up: 2025-12-29
-CI daily warm-up: 2025-12-30
-CI daily warm-up: 2025-12-31
-CI daily warm-up: 2025-12-31 (final)
-CI daily warm-up: 2025-12-31 (year end)
-CI daily warm-up: 2026-01-01
-CI daily warm-up: 2026-01-02
-CI daily warm-up: 2026-01-03
-CI daily warm-up: 2026-01-03_2
-CI daily warm-up: 2026-01-03_3
-CI daily warm-up: 2026-01-04
-CI daily warm-up: 2026-01-05
-CI daily warm-up: 2026-01-06
-CI daily warm-up: 2026-01-07
-Lesson: Write runbooks for recurring failures to avoid decision fatigue.
-CI daily warm-up: 2026-01-08
-CI daily warm-up: 2026-01-09
-CI daily warm-up: 2026-01-10
-CI daily warm-up: 2026-01-11
-CI daily warm-up: 2026-01-12
-CI daily warm-up: 2026-01-13
-CI daily warm-up: 2026-01-14
-CI daily warm-up: 2026-01-15
-CI daily warm-up: 2026-01-16
-CI daily warm-up: 2026-01-17
-CI daily warm-up: 2026-01-18
-CI daily warm-up: 2026-01-19
-CI daily warm-up: 2026-01-20
-CI daily warm-up: 2026-01-21
-CI daily warm-up: 2026-01-21-2
-CI daily warm-up: 2026-01-22
-CI daily warm-up: 2026-01-23
-CI daily warm-up: 2026-01-24
-CI daily warm-up: 2026-01-25
+- CI daily warm-up: 2025-12-29
+- CI daily warm-up: 2025-12-30
+- CI daily warm-up: 2025-12-31
+- CI daily warm-up: 2025-12-31 (final)
+- CI daily warm-up: 2025-12-31 (year end)
+- CI daily warm-up: 2026-01-01
+- CI daily warm-up: 2026-01-02
+- CI daily warm-up: 2026-01-03
+- CI daily warm-up: 2026-01-03_2
+- CI daily warm-up: 2026-01-03_3
+- CI daily warm-up: 2026-01-04
+- CI daily warm-up: 2026-01-05
+- CI daily warm-up: 2026-01-06
+- CI daily warm-up: 2026-01-07
+- Lesson: Write runbooks for recurring failures to avoid decision fatigue.
+- CI daily warm-up: 2026-01-08
+- CI daily warm-up: 2026-01-09
+- CI daily warm-up: 2026-01-10
+- CI daily warm-up: 2026-01-11
+- CI daily warm-up: 2026-01-12
+- CI daily warm-up: 2026-01-13
+- CI daily warm-up: 2026-01-14
+- CI daily warm-up: 2026-01-15
+- CI daily warm-up: 2026-01-16
+- CI daily warm-up: 2026-01-17
+- CI daily warm-up: 2026-01-18
+- CI daily warm-up: 2026-01-19
+- CI daily warm-up: 2026-01-20
+- CI daily warm-up: 2026-01-21
+- CI daily warm-up: 2026-01-21-2
+- CI daily warm-up: 2026-01-22
+- CI daily warm-up: 2026-01-23
+- CI daily warm-up: 2026-01-24
+- CI daily warm-up: 2026-01-25
