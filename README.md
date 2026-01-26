@@ -1,11 +1,24 @@
-# CI/CD daily warm-up template
+# CI/CD daily warm-up template　【KEEP】
+
+## Daily Use（毎日ここを見る）
+
+- ▶ PR を出す / 迷ったら  
+  → docs/runbooks/runbook-pr.md
+
+- ▶ コンフリクト対応  
+  → docs/runbooks/runbook-conflict.md
+
+- ▶ Runbook 一覧  
+  → docs/runbooks/README.md
+
+
 
 このリポジトリは、**CI/CD を「毎日・自然に回せる状態」にするための GitHub Template** です。  
 実装そのものではなく、**運用の型・導線・判断基準**を提供します。
 
-## Template Usage Principles
+## Template Usage Principles　【KEEP】
 
-## Editor note
+## Editor note　　【KEEP】
 
 - This template is maintained with **VS Code + Dev Containers** in mind to reduce setup friction  and make formatting / tooling behavior predictable.
 
@@ -30,18 +43,18 @@ You may use any editor or environment as long as the documented steps are follow
 
 
 
-## Quickstart (5 minutes)
+## Quickstart (5 minutes)　　【KEEP】
 
 This repository is a **daily CI/CD warm-up template**.
 Follow these steps to complete one full PR → CI → merge cycle.
 
-### 1. Create a feature branch
+### 1. Create a feature branch　　【KEEP】
 ```bash
 git switch main
 git pull
 git switch -c feature/daily-warmup-YYYYMMDD
 
-2. Make a tiny change
+2. Make a tiny change　
 Add one line to README.md (append to the end):
 CI daily warm-up: YYYY-MM-DD
 
@@ -59,7 +72,7 @@ Confirm that pr-ci-test runs and becomes green
 Click Merge pull request
 Delete the feature branch after merge
 
-✅ Done.
+### ✅ Done. 【MOVE】
 You have completed one full CI/CD warm-up cycle.
 
 For troubleshooting and detailed procedures, see:
@@ -153,7 +166,7 @@ git push -u origin HEAD
 
 Open PR → wait for CI → merge
 
-7. Cut tag (GitHub Actions)
+7. Cut tag (GitHub Actions)    【KEEP】
 
 This is the only place where tags are created.
 
@@ -177,12 +190,12 @@ Tag matches pyproject.toml version
 
 Tag is created on main HEAD only
 
-8. Release (GitHub Actions)
+8. Release (GitHub Actions) 【KEEP】
 
 Tag creation automatically triggers the Release workflow.
 No manual operation required.
 
-9. CD check (Release)
+9. CD check (Release) 【KEEP】
 
 Verify on GitHub:
 
@@ -205,7 +218,7 @@ Rules（重要）
 ❌ Duplicate tags must never be created
 
 
- ## CI / Ruleset 運用メモ（トラブルシューティング）
+## CI / Ruleset 運用メモ（トラブルシューティング）
 =======
 =======
 ## CI Failure Log Template
@@ -225,7 +238,7 @@ Rule:
 - Always identify the first failing job
 
 
-Troubleshooting memo (2026-01-02)
+### Troubleshooting memo (2026-01-02)  【MOVE】
 
 If multiple rulesets target main, the strictest rules apply.
 
@@ -242,7 +255,7 @@ Keep Do not require status checks on creation OFF.
 
 Close and recreate the PR after changing rulesets.
 
-CI / Ruleset 運用メモ（トラブルシューティング）
+### CI / Ruleset 運用メモ（トラブルシューティング） 【MOVE】
 背景
 
 GitHub の Ruleset は仕様というより実装都合により、
@@ -278,9 +291,9 @@ Ruleset を再設定（Required check を再追加）
 
 必要であれば PR を作り直す
 
-よくある対処法（詰まったらここを見る）
+### よくある対処法（詰まったらここを見る）
 
-If a required check stays "Expected — Waiting for status to be reported":
+If a required check stays "Expected — Waiting for status to be reported": 
 
 - Re-select the required check in the ruleset (remove → Add checks → select again).
 - Keep "Do not require status checks on creation" OFF.
@@ -319,7 +332,7 @@ Result
 
 CI behavior is stable and predictable.
 
-## Troubleshooting memo (2026-01-02)
+## Troubleshooting memo (2026-01-02) 【MOVE】
 
 - If multiple rulesets target `main`, the strictest rules apply.
   - Keep only one ruleset Active for `main`.
@@ -329,14 +342,14 @@ CI behavior is stable and predictable.
   - Close and recreate the PR after changing rulesets.
 
 
-## Runbooks
+## Runbooks 【KEEP】
 
 - docs/runbook-conflict.md
 - docs/runbook-pr.md
 
 
 
-Daily Log
+# Daily Log　 【KEEP】
 
 - CI daily warm-up: 2025-12-29
 - CI daily warm-up: 2025-12-30
