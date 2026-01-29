@@ -1,20 +1,25 @@
 # CI/CD daily warm-up template　【KEEP】
 
-## Daily Use（毎日ここを見る）
-
-- ▶ PR を出す / 迷ったら  
-  → docs/runbooks/runbook-pr.md
-
-- ▶ コンフリクト対応  
-  → docs/runbooks/runbook-conflict.md
-
-- ▶ Runbook 一覧  
-  → docs/runbooks/README.md
-
-
-
 このリポジトリは、**CI/CD を「毎日・自然に回せる状態」にするための GitHub Template** です。  
 実装そのものではなく、**運用の型・導線・判断基準**を提供します。
+
+> 📌 This README is a **daily entry point**.
+>  
+> - Quick actions and links for daily use live here  
+> - Detailed procedures and troubleshooting are in `docs/runbooks/`
+
+## Daily Use（毎日ここを見る）
+
+▶ PR を出す / 迷ったら  
+- docs/runbooks/runbook-pr.md
+
+▶ コンフリクト対応  
+- docs/runbooks/runbook-conflict.md
+
+▶ Runbook 一覧  
+- docs/runbooks/README.md
+
+
 
 ## Template Usage Principles　【KEEP】
 
