@@ -1,5 +1,13 @@
 # CI/CD daily warm-up template　【KEEP】
 
+## How to use this README
+
+- **First time here?** → Start with **Quickstart (Onboarding)**
+- **Daily user?** → Go to **Daily Use**
+- **Something feels off?** → Check **Runbooks**
+
+## Quickstart（初回オンボーディング）
+
 このリポジトリは、**CI/CD を「毎日・自然に回せる状態」にするための GitHub Template** です。  
 実装そのものではなく、**運用の型・導線・判断基準**を提供します。
 
