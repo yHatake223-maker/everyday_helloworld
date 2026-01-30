@@ -6,6 +6,7 @@
 - **Daily user?** → Go to **Daily Use**
 - **Something feels off?** → Check **Runbooks**
 
+
 ## Quickstart（初回オンボーディング）
 
 このリポジトリは、**CI/CD を「毎日・自然に回せる状態」にするための GitHub Template** です。  
@@ -18,14 +19,14 @@
 
 ## Daily Use（毎日ここを見る）
 
-▶ PR を出す / 迷ったら  
-- docs/runbooks/runbook-pr.md
+- ▶ PR を出す / 迷ったら  
+  docs/runbooks/runbook-pr.md
 
-▶ コンフリクト対応  
-- docs/runbooks/runbook-conflict.md
+- ▶ コンフリクト対応  
+  docs/runbooks/runbook-conflict.md
 
-▶ Runbook 一覧  
-- docs/runbooks/README.md
+- ▶ Runbook 一覧  
+  docs/runbooks/README.md
 
 
 
@@ -56,9 +57,9 @@ You may use any editor or environment as long as the documented steps are follow
 
 
 
-## Quickstart (5 minutes)　　【KEEP】
+## Quickstart (Onboarding)
 
-This repository is a **daily CI/CD warm-up template**.
+This section is for first-time users to experience one full PR → CI → merge cycle.
 Follow these steps to complete one full PR → CI → merge cycle.
 
 ### 1. Create a feature branch　　【KEEP】
