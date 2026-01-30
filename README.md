@@ -402,3 +402,4 @@ CI behavior is stable and predictable.
 - CI daily warm-up: 2026-01-27
 - CI daily warm-up: 2026-01-29
 - CI daily warm-up: 2026-01-30
+- CI daily warm-up: 2026-01-31
