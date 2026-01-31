@@ -1,13 +1,10 @@
-# CI/CD daily warm-up template　【KEEP】
+# CI/CD daily warm-up template　
 
 ## How to use this README
 
 - **First time here?** → Start with **Quickstart (Onboarding)**
 - **Daily user?** → Go to **Daily Use**
 - **Something feels off?** → Check **Runbooks**
-
-
-## Quickstart（初回オンボーディング）
 
 このリポジトリは、**CI/CD を「毎日・自然に回せる状態」にするための GitHub Template** です。  
 実装そのものではなく、**運用の型・導線・判断基準**を提供します。
@@ -28,11 +25,7 @@
 - ▶ Runbook 一覧  
   docs/runbooks/README.md
 
-
-
-## Template Usage Principles　【KEEP】
-
-## Editor note　　【KEEP】
+## Template Usage Principles
 
 - This template is maintained with **VS Code + Dev Containers** in mind to reduce setup friction  and make formatting / tooling behavior predictable.
 
@@ -62,7 +55,7 @@ You may use any editor or environment as long as the documented steps are follow
 This section is for first-time users to experience one full PR → CI → merge cycle.
 Follow these steps to complete one full PR → CI → merge cycle.
 
-### 1. Create a feature branch　　【KEEP】
+### 1. Create a feature branch
 ```bash
 git switch main
 git pull
@@ -89,7 +82,7 @@ Confirm that pr-ci-test runs and becomes green
 Click Merge pull request
 Delete the feature branch after merge
 
-### ✅ Done. 【MOVE】
+### ✅ Done.
 You have completed one full CI warm-up cycle.
 This is the daily baseline for this template.
 
@@ -99,7 +92,7 @@ If you want to proceed to CD (version bump, tag, release), see:
 
 
 
-# Daily Log　 【KEEP】
+# Daily Log　
 
 - CI daily warm-up: 2025-12-29
 - CI daily warm-up: 2025-12-30
