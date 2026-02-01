@@ -1,3 +1,4 @@
+
 # CI/CD daily warm-up template　
 
 ## How to use this README
@@ -86,11 +87,8 @@ Delete the feature branch after merge
 You have completed one full CI warm-up cycle.
 This is the daily baseline for this template.
 
-
-If you want to proceed to CD (version bump, tag, release), see:
-- docs/runbooks/cd-procedure.md
-
-
+👉 CD（Version bump / Tag / Release）の手順は  
+→ [CD Procedure](docs/runbooks/cd-procedure.md) を参照
 
 # Daily Log　
 

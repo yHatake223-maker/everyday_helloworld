@@ -1,3 +1,8 @@
+
+⬅ 日常の作業フロー（README）に戻る  
+→ [README](../../README.md)
+
+
 # CD Procedure (Version bump → Tag → Release)
 
 This runbook describes the **safe and repeatable CD flow**  

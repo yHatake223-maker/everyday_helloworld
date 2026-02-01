@@ -3,6 +3,9 @@
 - Ruleset checklist: `runbooks/ruleset-checklist.md`
 - New repo scenario: `runbooks/new-repo-scenario.md`
 - Publish template: `runbooks/publish-template.md`
+- [cd-procedure.md](./cd-procedure.md)  
+  Version bump → Tag → Release の正式手順
+
 
 
 ## Policies
