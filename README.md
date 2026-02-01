@@ -133,4 +133,4 @@ If you want to proceed to CD (version bump, tag, release), see:
 - CI daily warm-up: 2026-01-29
 - CI daily warm-up: 2026-01-30
 - CI daily warm-up: 2026-01-31
-- CI daily warm-up: 2026-01-31-2
+- CI daily warm-up: 2026-02-01
