@@ -26,6 +26,9 @@
 - ▶ Runbook 一覧  
   docs/runbooks/README.md
 
+- ▶ Dev Container behavior and policies:
+  docs/runbooks/template-migration.md
+
 ## Template Usage Principles
 
 - This template is maintained with **VS Code + Dev Containers** in mind to reduce setup friction  and make formatting / tooling behavior predictable.
