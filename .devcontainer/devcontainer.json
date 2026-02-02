@@ -1,9 +1,10 @@
 {
-  "name": "everyday_helloworld",
-  "dockerComposeFile": ["../compose.yml"],
+  "name": "CI/CD Daily Warm-up (Template)",
+  "dockerComposeFile": [
+    "../compose.yml"
+  ],
   "service": "app",
   "workspaceFolder": "/workspace",
-
   "customizations": {
     "vscode": {
       "extensions": [
@@ -12,7 +13,5 @@
       ]
     }
   },
-
   "postCreateCommand": "pip install -e . && pip install pytest ruff==0.14.10 black"
-
 }
