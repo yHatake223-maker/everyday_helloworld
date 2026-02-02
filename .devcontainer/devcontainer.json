@@ -1,5 +1,4 @@
 {
-  "name": "CI/CD Daily Warm-up (Template)",
   "dockerComposeFile": [
     "../compose.yml"
   ],

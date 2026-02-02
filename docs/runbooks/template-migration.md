@@ -8,6 +8,18 @@
 - Required check は **`pr-ci-test` 1本**で運用する
 - 変更は小さく、必ず戻せる（revert可能）
 
+### Dev Container name policy
+
+This template intentionally does NOT set a fixed Dev Container name.
+
+Reason:
+- The container name should follow the repository name created via "Use this template".
+- This avoids manual renaming and prevents confusion after clone.
+- Repository name is the single source of truth.
+
+If you want a custom name, set `"name"` in `.devcontainer/devcontainer.json` explicitly.
+
+
 ---
 
 ## 0. 最短の全体手順（チェックリスト）
