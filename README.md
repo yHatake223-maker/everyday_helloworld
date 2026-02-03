@@ -15,6 +15,31 @@
 > - Quick actions and links for daily use live here  
 > - Detailed procedures and troubleshooting are in `docs/runbooks/`
 
+## Dev Container の表示名について
+
+このテンプレートでは、Dev Container の表示名を  
+`.devcontainer/devcontainer.json` の `name` フィールドで明示的に指定しています。
+
+VS Code Dev Containers では、  
+**「Use this template」で作成したリポジトリ名や、clone 後のフォルダ名を  
+自動的に Dev Container の表示名として使用する仕組みがありません。**
+
+そのため、`name` を指定しない場合、  
+すべてのコンテナが同じ表示名（例: `開発コンテナー @ DESKTOP-LINUX`）となり、
+複数の Dev Container を同時に使うと区別が困難になります。
+
+#### 表示名を変更したい場合
+
+複数の Dev Container を区別したい場合は、  
+`.devcontainer/devcontainer.json` の `name` を任意の名前に変更してください。
+
+```json
+{
+  "name": "my-project-devcontainer"
+}
+```
+
+
 ## Daily Use（毎日ここを見る）
 
 - ▶ PR を出す / 迷ったら  
