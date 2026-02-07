@@ -99,3 +99,11 @@ No manual operation required.
 - ✅ Tags are created only by GitHub Actions
 - ❌ Version and tag mismatch must fail
 - ❌ Duplicate tags must never be created
+
+## Docs の公開（GitHub Pages）
+
+`docs/**` 配下の Runbook は、`main` ブランチにマージされると
+GitHub Pages に自動でデプロイされます。
+
+- デプロイは GitHub Actions により実行されます
+- 使用している workflow: `.github/workflows/pages.yml`

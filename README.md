@@ -38,6 +38,17 @@ VS Code Dev Containers では、
   "name": "my-project-devcontainer"
 }
 ```
+## Documentation (GitHub Pages)
+
+Runbook は GitHub Pages により自動公開されます。
+
+- 対象: `docs/**`
+- トリガー: `main` ブランチへの push  
+  （`docs/**` または `.github/workflows/pages.yml` に変更があった場合のみ）
+- 出力先: GitHub Pages  
+  （GitHub Actions によってデプロイされます）
+
+
 
 
 ## Daily Use（毎日ここを見る）
