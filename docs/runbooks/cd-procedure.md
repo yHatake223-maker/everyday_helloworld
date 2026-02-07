@@ -111,3 +111,5 @@ GitHub Pages に自動でデプロイされます。
 ### Pages デプロイの有効化
 デフォルトでは Pages デプロイは無効です。
 有効化する場合は、リポジトリ変数 `ENABLE_PAGES_DEPLOY=true` を設定してください。
+
+<!-- gate-off test -->
