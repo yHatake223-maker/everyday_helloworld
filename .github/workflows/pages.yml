@@ -18,6 +18,7 @@ concurrency:
 
 jobs:
   build:
+    if: ${{ vars.ENABLE_PAGES_DEPLOY == 'true' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -31,7 +32,6 @@ jobs:
         run: |
           mkdir -p site/runbooks
 
-          # シンプルなトップページ
           cat > site/index.html <<'EOF'
           <!doctype html><meta charset="utf-8">
           <h1>Runbooks</h1>
@@ -40,7 +40,6 @@ jobs:
           </ul>
           EOF
 
-          # runbooks をHTML化（まずは1つだけ）
           pandoc docs/runbooks/cd-procedure.md -s -o site/runbooks/cd-procedure.html
 
       - name: Setup Pages
@@ -52,6 +51,7 @@ jobs:
           path: site
 
   deploy:
+    if: ${{ vars.ENABLE_PAGES_DEPLOY == 'true' }}
     needs: build
     runs-on: ubuntu-latest
     environment:
