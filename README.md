@@ -47,6 +47,9 @@ Runbook は GitHub Pages により自動公開されます。
   （`docs/**` または `.github/workflows/pages.yml` に変更があった場合のみ）
 - 出力先: GitHub Pages  
   （GitHub Actions によってデプロイされます）
+- URL: https://yhatake223-maker.github.io/<repo>/
+　　<repo> を実際のリポ名に置き換えてから開いてください
+
 
 
 
