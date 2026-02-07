@@ -49,6 +49,9 @@ Runbook は GitHub Pages により自動公開されます。
   （GitHub Actions によってデプロイされます）
 - URL: https://yhatake223-maker.github.io/<repo>/
 　　<repo> を実際のリポ名に置き換えてから開いてください
+> Note: GitHub Pages へのデプロイは **デフォルトでは無効** です。
+> 有効化する場合は、リポジトリ変数 `ENABLE_PAGES_DEPLOY=true` を設定し、
+> Settings → Pages → Source を「GitHub Actions」にしてください。
 
 
 

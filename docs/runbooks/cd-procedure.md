@@ -107,3 +107,7 @@ GitHub Pages に自動でデプロイされます。
 
 - デプロイは GitHub Actions により実行されます
 - 使用している workflow: `.github/workflows/pages.yml`
+
+### Pages デプロイの有効化
+デフォルトでは Pages デプロイは無効です。
+有効化する場合は、リポジトリ変数 `ENABLE_PAGES_DEPLOY=true` を設定してください。
