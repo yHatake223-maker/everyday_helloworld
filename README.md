@@ -186,4 +186,5 @@ This is the daily baseline for this template.
 - CI daily warm-up: 2026-02-08
 - CI daily warm-up: 2026-02-09
 - CI daily warm-up: 2026-02-10
-- CI daily warm-up: 2026-02-12
+- CI daily warm-up: 2026-02-12-2
+- CI daily warm-up: 2026-02-13
