@@ -1,4 +1,3 @@
-
 # CI/CD daily warm-up template　
 
 ## How to use this README
@@ -11,8 +10,8 @@
 実装そのものではなく、**運用の型・導線・判断基準**を提供します。
 
 > 📌 This README is a **daily entry point**.
->  
-> - Quick actions and links for daily use live here  
+>
+> - Quick actions and links for daily use live here
 > - Detailed procedures and troubleshooting are in `docs/runbooks/`
 
 ## Dev Container の表示名について
@@ -38,6 +37,7 @@ VS Code Dev Containers では、
   "name": "my-project-devcontainer"
 }
 ```
+
 ## Documentation (GitHub Pages)
 
 Runbook は GitHub Pages により自動公開されます。
@@ -48,14 +48,10 @@ Runbook は GitHub Pages により自動公開されます。
 - 出力先: GitHub Pages  
   （GitHub Actions によってデプロイされます）
 - URL: https://yhatake223-maker.github.io/<repo>/
-　　<repo> を実際のリポ名に置き換えてから開いてください
-> Note: GitHub Pages へのデプロイは **デフォルトでは無効** です。
-> 有効化する場合は、リポジトリ変数 `ENABLE_PAGES_DEPLOY=true` を設定し、
-> Settings → Pages → Source を「GitHub Actions」にしてください。
-
-
-
-
+  　　<repo> を実際のリポ名に置き換えてから開いてください
+  > Note: GitHub Pages へのデプロイは **デフォルトでは無効** です。
+  > 有効化する場合は、リポジトリ変数 `ENABLE_PAGES_DEPLOY=true` を設定し、
+  > Settings → Pages → Source を「GitHub Actions」にしてください。
 
 ## Daily Use（毎日ここを見る）
 
@@ -73,11 +69,10 @@ Runbook は GitHub Pages により自動公開されます。
 
 ## Template Usage Principles
 
-- This template is maintained with **VS Code + Dev Containers** in mind to reduce setup friction  and make formatting / tooling behavior predictable.
+- This template is maintained with **VS Code + Dev Containers** in mind to reduce setup friction and make formatting / tooling behavior predictable.
 
 - However, **VS Code is not required**.  
-You may use any editor or environment as long as the documented steps are followed.
-
+  You may use any editor or environment as long as the documented steps are followed.
 
 このテンプレを実プロジェクト（例: `csv-sum-cli`）で利用する際は、  
 以下の原則を一貫して適用します。
@@ -85,16 +80,13 @@ You may use any editor or environment as long as the documented steps are follow
 - **実装PR** は、題材となるプロジェクト側のリポジトリに出す  
   （例: csv-sum-cli の機能追加・テスト追加）
 - **導線・運用・仕組みの改善PR** は、このテンプレ（everyday_helloworld）に還元する
-- 題材側で「便利機能・仕組み」を思いついたら、まず **テンプレとして一般化できるか？** を考える  
-  - Yes → Issue / PR としてこのテンプレに還元する  
+- 題材側で「便利機能・仕組み」を思いついたら、まず **テンプレとして一般化できるか？** を考える
+  - Yes → Issue / PR としてこのテンプレに還元する
   - No（題材固有）→ 題材リポジトリに残す
 
 このリポジトリは、  
 **「読むと分かる」ではなく「触ると正解へ導かれる」CI/CD テンプレ**を目指して、  
 実運用からのフィードバックによって継続的に改善されます。
-
-
-
 
 ## Quickstart (Onboarding)
 
@@ -102,6 +94,7 @@ This section is for first-time users to experience one full PR → CI → merge 
 Follow these steps to complete one full PR → CI → merge cycle.
 
 ### 1. Create a feature branch
+
 ```bash
 git switch main
 git pull
@@ -109,10 +102,11 @@ git switch -c feature/daily-warmup-YYYYMMDD
 ```
 
 2. Make a tiny change　
-Add one line to README.md (append to the end):
-CI daily warm-up: YYYY-MM-DD
+   Add one line to README.md (append to the end):
+   CI daily warm-up: YYYY-MM-DD
 
 3. Commit and push
+
 ```bash
 git add README.md
 git commit -m "docs: daily warm-up (YYYY-MM-DD)"
@@ -120,15 +114,16 @@ git push -u origin HEAD
 ```
 
 4. Open a Pull Request
-Base branch: main
-Compare branch: your feature branch
-Confirm that pr-ci-test runs and becomes green
+   Base branch: main
+   Compare branch: your feature branch
+   Confirm that pr-ci-test runs and becomes green
 
 5. Merge
-Click Merge pull request
-Delete the feature branch after merge
+   Click Merge pull request
+   Delete the feature branch after merge
 
 ### ✅ Done.
+
 You have completed one full CI warm-up cycle.
 This is the daily baseline for this template.
 
@@ -201,3 +196,4 @@ This is the daily baseline for this template.
 - CI daily warm-up: 2026-04-01
 - CI daily warm-up: 2026-04-02
 - CI daily warm-up: 2026-04-06
+- CI daily warm-up: 2026-06-06
